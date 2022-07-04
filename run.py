@@ -84,6 +84,11 @@ def calculate_surplus_data(sales_row):
     
     return surplus_data
 
+def get_last_5_entries_sales():
+    sales = SHEET.worksheet("sales")
+    column = sales.col_values(3)
+    print(column)
+
 def main():
     '''
     Run all program functions
